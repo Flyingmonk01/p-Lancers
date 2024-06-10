@@ -60,7 +60,7 @@ export function BackgroundBeamsDemo() {
                     Get in Touch with Us
                 </h1>
                 <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-20">
-                    We're here to help you bring your projects to life. Whether you have questions, need more information, or are ready to start your next big venture, our team is eager to assist you. Please fill out the contact form below, and one of our representatives will get back to you promptly. Let's create something amazing together!
+                    We&apos;re here to help you bring your projects to life. Whether you have questions, need more information, or are ready to start your next big venture, our team is eager to assist you. Please fill out the contact form below, and one of our representatives will get back to you promptly. Let&apos;s create something amazing together!
                 </p>
                 <form onSubmit={handleSubmit} className="w-full relative z-20 flex flex-col items-center ">
                     <input
