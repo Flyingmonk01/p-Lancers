@@ -5,7 +5,7 @@ import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../p-Lancers.png"
+import Logo from "../../assets/p-Lancers.png"
 
 function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);

@@ -2,6 +2,9 @@ import { HeroParallaxDemo } from "@/components/HeroParallax";
 import { SparklesPreview } from "@/components/Sparkles";
 import { HeroHighlightDemo } from "@/components/HeroHighlight";
 import { StickyScrollRevealDemo } from "@/components/StickyScroll";
+import { InfiniteMovingCardsDemo } from "@/components/InfiniteMoving";
+
+
 
 export default function Home() {
     return (
@@ -13,7 +16,7 @@ export default function Home() {
                 </div>
                 <HeroParallaxDemo />
                 <StickyScrollRevealDemo />
-                
+                <InfiniteMovingCardsDemo />
             </main>
         </>
     );
