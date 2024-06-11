@@ -17,6 +17,7 @@ export default function Home() {
                 <HeroParallaxDemo />
                 <StickyScrollRevealDemo />
                 <InfiniteMovingCardsDemo />
+    
             </main>
         </>
     );
