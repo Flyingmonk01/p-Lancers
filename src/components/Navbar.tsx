@@ -34,7 +34,7 @@ function Navbar({ className }: { className?: string }) {
                             <HoveredLink href="/web-dev">Web Development</HoveredLink>
                             <HoveredLink href="/data-analytics">Data Analytics</HoveredLink>
                             <HoveredLink href="/machine-learning">Machine Learning</HoveredLink>
-                            <HoveredLink href="/sd">Software Development</HoveredLink>
+                            <HoveredLink href="/mobile-development">Android Development</HoveredLink>
                         </div>
                     </MenuItem>
 
