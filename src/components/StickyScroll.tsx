@@ -2,7 +2,7 @@
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
-import pic from "../../assets/tab-img.png"
+import pic from "../assets/tab-img.png"
 
 const content = [
   {

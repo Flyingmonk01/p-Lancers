@@ -15,7 +15,7 @@ export default function Home() {
                     <SparklesPreview />
                 </div>
                 <HeroScrollDemo />
-                <div className="flex lg:flex-row justify-between align-items-center md:flex-col sm:flex-col">
+                <div className="flex  sm:flex-col lg:flex-row justify-between align-items-center md:flex-col">
                     <div className="flex-1">
                         <GlobeDemo />
                     </div>

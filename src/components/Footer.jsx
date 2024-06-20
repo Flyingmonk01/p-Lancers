@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../assets/p-Lancers.png";
+import Logo from "../assets/p-Lancers.png";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {

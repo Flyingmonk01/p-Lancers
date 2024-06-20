@@ -3,7 +3,7 @@
 import React from "react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
 import Image from "next/image";
-import pic from "../../assets/tab-img.png"
+import pic from "../assets/tab-img.png"
 
 
 export function HeroScrollDemo() {
