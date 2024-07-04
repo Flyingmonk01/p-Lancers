@@ -1,6 +1,4 @@
 "use client";
-
-import { animate } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
@@ -16,7 +14,7 @@ function ScrollToTop() {
                 });
             }}
         >
-            <FaArrowUp className="fixed bottom-5 right-5 z-50 text-2xl bg-gray-300 text-black rounded-full hover:cursor-pointer" />
+            <FaArrowUp className="fixed h-8 w-8 bottom-5 right-5 z-50 text-2xl px-1 bg-gray-300 text-black rounded-full hover:cursor-pointer hover:bg-gray-400 hover:px-2 animate-bounce delay-100" />
         </Link>
     );
 }
