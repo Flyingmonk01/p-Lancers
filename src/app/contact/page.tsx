@@ -1,10 +1,8 @@
-import { BackgroundBeamsDemo } from '@/components/contact'
-import React from 'react'
+import { BackgroundBeamsDemo } from "@/components/contact";
+import React from "react";
 
 function Contact() {
-  return (
-    <BackgroundBeamsDemo />
-  )
+    return <BackgroundBeamsDemo />;
 }
 
-export default Contact
+export default Contact;

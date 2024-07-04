@@ -15,11 +15,11 @@ export const StickyScroll = ({
   }[];
   contentClassName?: string;
 }) => {
-  const [activeCard, setActiveCard] = useState(0);
+  const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
-    // Uncomment line 22 and comment line 23 if you DON'T want the overflow container and want to have it change on the entire page scroll
-    // target: ref,
+    // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
+    // target: ref
     container: ref,
     offset: ["start start", "end start"],
   });
@@ -36,7 +36,7 @@ export const StickyScroll = ({
         return acc;
       },
       0
-    );
+    ); 
     setActiveCard(closestBreakpointIndex);
   });
 
@@ -57,48 +57,56 @@ export const StickyScroll = ({
 
   useEffect(() => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  });
+  }, [activeCard]);
 
   return (
-    <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
-      className="h-[80vh] overflow-y-auto flex justify-center relative space-x-10 rounded-sm p-10 py-32"
-      ref={ref}
-    >
-      <div className="relative flex items-start  w-full">
-        <div className="max-w-2xl w-full">
-          {content.map((item, index) => (
-            <div key={item.title + index} className="my-20 pb-40">
-              <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-2xl font-bold text-slate-100"
-              >
-                {item.title}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-lg text-slate-300 max-w-sm mt-10"
-              >
-                {item.description}
-              </motion.p>
-            </div>
-          ))}
-          <div className="h-40" />
-        </div>
-      </div>
-      <div
-        style={{ background: backgroundGradient }}
-        className={cn(
-          "hidden lg:block h-full w-3/4 rounded-md bg-white sticky top-0 overflow-hidden",
-          contentClassName
-        )}
+      <motion.div
+          animate={{
+              backgroundColor:
+                  backgroundColors[activeCard % backgroundColors.length],
+          }}
+          className="h-[70vh] w-[70vw] justify-evenly overflow-y-auto flex flex-col relative space-x-0 lg:space-x-10 rounded-md p-10"
+          ref={ref}
       >
-        {content[activeCard].content ?? null}
-      </div>
-    </motion.div>
+          <div className="relative flex w-full items-center px-4">
+              <div className="w-full lg:max-w-full ">
+                  {content.map((item, index) => (
+                      <div
+                          key={item.title + index}
+                          className="my-20 p-10 sm:p-0 flex flex-col items-center justify-center lg:flex-row"
+                      >
+                          <div className="lg:mr-40">
+                              <motion.h2
+                                  initial={{
+                                      opacity: 0,
+                                  }}
+                                  animate={{
+                                      opacity: activeCard === index ? 1 : 0.3,
+                                  }}
+                                  className="text-2xl font-bold text-slate-100"
+                              >
+                                  {item.title}
+                              </motion.h2>
+                              <motion.p
+                                  initial={{
+                                      opacity: 0,
+                                  }}
+                                  animate={{
+                                      opacity: activeCard === index ? 1 : 0.3,
+                                  }}
+                                  className="text-lg text-slate-300 max-w-sm mt-10"
+                              >
+                                  {item.description}
+                              </motion.p>
+                          </div>
+                          <div className={`${contentClassName}`}>
+                              {item.content}
+                          </div>
+                      </div>
+                  ))}
+                  <div className="h-34" />
+              </div>
+          </div>
+      </motion.div>
   );
 };

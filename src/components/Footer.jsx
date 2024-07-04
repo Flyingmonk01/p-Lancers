@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="flex flex-row justify-around min-h-48 w-screen border-red-400 z-10 relative bg-slate-900 py-12 px-24">
+        <footer className="flex flex-col justify-center items-center lg:flex-row lg:justify-around min-h-48 w-screen border-red-400 z-10 relative bg-slate-900 py-12 px-24">
             <div className="flex justify-center items-center flex-col">
                 <Link href="/">
                     <Image
@@ -20,14 +20,14 @@ function Footer() {
                 <span>All copyrights are reserved to @flying_monk</span>
             </div>
 
-            <div className="text-lg">
+            <div className="text-lg py-6">
                 <ul>
                     <li className="py-2">Services</li>
                     <li className="py-2">Domain</li>
                     <li className="py-2">Requirements</li>
                 </ul>
             </div>
-            <div>
+            <div className="py-8">
                 <div className="flex p-2 justify-start items-center">
                     <FaGithub className="size-10" />
                     <span className="px-2"><Link rel="noopener noreferrer" target="_blank" href={"https://www.github.com"}>Github</Link></span>
