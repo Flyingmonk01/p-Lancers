@@ -12,11 +12,11 @@ function MobileDev() {
                 <div className="md:col-span-1 border-white p-4 my-6">
                     <h1 className="text-center text-4xl font-extrabold my-12">FRONTEND TECH</h1>
                     {frontendTechnologies.map((i, idx)=>(
-                        <li className="text-left ml-36  text-xl font-semibold my-6" key={idx}>{i}</li>
+                        <li className="text-left ml-36  text-xl font-semibold my-6 md:ml-16" key={idx}>{i}</li>
                     ))}
-                    <h1 className="text-center text-4xl font-extrabold my-12">BACKEND TECH</h1>
+                    <h1 className="text-center text-4xl font-extrabold my-12 ">BACKEND TECH</h1>
                     {backendTechnologies.map((i, idx)=>(
-                        <li className="text-left ml-36  text-xl font-semibold my-6" key={idx}>{i}</li>
+                        <li className="text-left ml-36  text-xl font-semibold my-6 md:ml-16" key={idx}>{i}</li>
                     ))}
                 </div>
                 <div className="md:col-span-2 px-16 flex flex-row flex-wrap ">

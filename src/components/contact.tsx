@@ -53,7 +53,7 @@ export function BackgroundBeamsDemo() {
     };
 
     return (
-        <div className="min-h-full w-full rounded-md bg-neutral-950 relative flex lg:flex-row flex-col mt-20 antialiased justify-evenly items-center mx-auto mb-12">
+        <div className="min-h-full w-full rounded-md bg-neutral-950 relative flex lg:flex-row flex-col mt-20 antialiased justify-evenly items-center lg:items-start mx-auto pb-12">
             <div className="lg:w-1/2 m-24 flex justify-start items-start flex-col px-16 sm:px-0">
                 <h1 className="text-3xl py-6">Get in Touch with Us</h1>
                 <h1 className="text-lg font-thin ">

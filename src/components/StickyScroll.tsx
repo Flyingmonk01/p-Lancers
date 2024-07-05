@@ -4,7 +4,7 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 import sam from "@/assets/images/sam.jpg"
 import pro from "@/assets/images/pro.jpg"
-import kam from "@/assets/images/kam.jpg"
+import kam from "@/assets/images/Kam.jpg"
 import nave from "@/assets/images/nave.jpg"
 
 const content = [
@@ -27,7 +27,7 @@ const content = [
   {
     title: "Naveen S.",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "As a Data Scientist I am passionate about turning data into actionable insights. With a strong command of Python, SQL, and R, I bring your data to life using tools like Tableau and Excel. My expertise lies in pandas, scikit-learn, Graph Neural Networks, and NLP. Beyond the numbers, I excel in data storytelling and analytical reasoning, making complex data easy to understand and impactful for your business. Let’s transform your data into compelling stories and smart solutions together!",
     content: (
       <div className="h-full w-full  flex items-center text-white md:justify-start sm:justify-start mt-4">
         <Image
@@ -43,7 +43,7 @@ const content = [
   {
     title: "Kamlesh Saini",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "As a skilled frontend developer with a strong command of modern web technologies, I specialize in crafting engaging and user-friendly interfaces. I have a proven track record of delivering high-quality work that meets client expectations. As a freelancer, I prioritize clear and responsive communication, ensuring a seamless and collaborative experience for my clients. My strengths in time management and teamwork enable me to deliver projects efficiently and effectively, making me a reliable partner for any frontend development needs.",
       content: (
         <div className="h-full w-full  flex items-center text-white md:justify-start sm:justify-start mt-4">
           <Image
@@ -76,7 +76,7 @@ const content = [
 export function StickyScrollRevealDemo() {
   return (
     <div className="p-10 flex justify-center items-center flex-col">
-      <h1 className="text-center font-semibold text-3xl mb-6">Our Founders</h1>
+      <h1 className="text-center font-semibold text-3xl mb-6 ">Our Founders</h1>
       <StickyScroll content={content} />
     </div>
   );

@@ -13,7 +13,7 @@ function DataAnalytics() {
                 <div className="md:col-span-1 border-white p-4 my-6">
                     <h1 className="text-center text-4xl font-extrabold my-12">ANALYSIS TOOLS</h1>
                     {dataAnalysisTechnologies.map((i, idx)=>(
-                        <li className="text-left ml-36  text-xl font-semibold my-6" key={idx}>{i}</li>
+                        <li className="text-left ml-36  text-xl font-semibold my-6 md:ml-16" key={idx}>{i}</li>
                     ))}
                    
                 </div>
@@ -40,7 +40,12 @@ const dataAnalysisTechnologies = [
     "PowerBI",          
     "Python",          
     "Sk-Learn",          
-    
+    "SQL",
+    "MySQL",
+    "R",
+    "Tableu",
+    "Statistical Computing",
+    "Data Visualization",
   ];
   
 

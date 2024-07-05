@@ -23,7 +23,7 @@ export default function Home() {
                         <GlobeDemo />
                     </div>
                     <div className="flex-1">
-                        <Technologies />
+                        <Technologies />       
                     </div>
                 </div>
 
