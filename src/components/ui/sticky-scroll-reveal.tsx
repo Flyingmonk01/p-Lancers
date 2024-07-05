@@ -73,9 +73,9 @@ export const StickyScroll = ({
             <div className="relative flex w-full items-center px-4">
                 <div className="w-full lg:max-w-full my-10">
                     {content.map((item, index) => (
-                        <>
+                        <div key={index}>
                             <div
-                                key={item.title + index}
+                                
                                 className="my-20 flex flex-col items-center justify-center lg:flex-row"
                             >
                                 <div className="lg:mr-40">
@@ -109,7 +109,7 @@ export const StickyScroll = ({
                                 </div>
                             </div>
                             {content.length - 1 !== index && <hr />}
-                        </>
+                        </div>
                     ))}
                     <div className="h-34" />
                 </div>

@@ -4,7 +4,7 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 import sam from "@/assets/images/sam.jpg"
 import pro from "@/assets/images/pro.jpg"
-import kam from "@/assets/images/kam.jpg"
+import kamlesh from "@/assets/images/kam.png"
 import nave from "@/assets/images/nave.jpg"
 
 const content = [
@@ -47,9 +47,9 @@ const content = [
       content: (
         <div className="h-full w-full  flex items-center text-white md:justify-start sm:justify-start mt-4">
           <Image
-            src={kam}
+            src={kamlesh}
             width={300}
-            height={300}
+            height={200}
             className="h-100 w-100 object-cover rounded-3xl"
             alt="linear board demo"
           />
