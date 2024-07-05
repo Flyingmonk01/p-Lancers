@@ -4,7 +4,7 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 import sam from "@/assets/images/sam.jpg"
 import pro from "@/assets/images/pro.jpg"
-import kam from "@/assets/images/Kam.jpg"
+import kam from "@/assets/images/kam.jpg"
 import nave from "@/assets/images/nave.jpg"
 
 const content = [
