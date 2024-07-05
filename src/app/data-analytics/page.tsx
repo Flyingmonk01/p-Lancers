@@ -46,10 +46,16 @@ const dataAnalysisTechnologies = [
 
 const projects = [
     {
-        header: "Blog-App",
+        header: "SuperSales Analysis Dashboard",
         text: "This is the description about the project CADEMY. This is a full-stack project made with MERN-Stack. For More details of the project Please View Demo.",
-        link: "https://blog-app-omega-three.vercel.app/",
-        img: "https://tse2.mm.bing.net/th?id=OIP.L5Q-gTU2LMwfgyNjk7YMbwHaDt&pid=Api&P=0&h=220",
+        link: "https://public.tableau.com/app/profile/naveen.s1041/viz/SuperSalesAnalysisDashboard/Dashboard1",
+        img: "https://tse2.mm.bing.net/th?id=OIP.EwlFXzqnGNamMRqTGABT_gHaEa&pid=Api&P=0&h=220",
+    },
+    {
+        header: "World Co2 Dashboard",
+        text: "This is the description about the project CADEMY. This is a full-stack project made with MERN-Stack. For More details of the project Please View Demo.",
+        link: "https://public.tableau.com/app/profile/naveen.s1041/viz/WorldCo2Dashboard_16669516888470/Sheet1",
+        img: "https://tse2.mm.bing.net/th?id=OIP.SOURVjrCGfjJTrU3n0N54wHaDt&pid=Api&P=0&h=220",
     },
     
 ];

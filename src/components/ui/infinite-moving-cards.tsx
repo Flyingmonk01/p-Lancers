@@ -98,7 +98,7 @@ export const InfiniteMovingCards = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(70%_+_4px)] w-[calc(70%_+_4px)]"
               ></div>
               <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
                 {item.name}
@@ -108,7 +108,7 @@ export const InfiniteMovingCards = ({
                   <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
                     {item.email}
                   </span>
-                  <span className="overflow-auto max-h-96 text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className="overflow-auto max-h-48 text-sm leading-[1.6] text-gray-400 font-normal sm:max-h-36 ">
                     {item.message}
                   </span>
                 </span>

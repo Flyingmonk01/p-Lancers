@@ -36,7 +36,7 @@ export function InfiniteMovingCardsDemo() {
   }, []); // Fetch data only once on mount
 
     return (
-        <div className="h-[25rem] mb-10 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="h-[35rem] mb-10 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
             <InfiniteMovingCards
                 items={testimonials}
                 direction="right"
