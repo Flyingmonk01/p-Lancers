@@ -1,6 +1,7 @@
 import { ThreeDCardDemo } from "@/components/Card";
 import React from "react";
 
+
 function MachineLearning() {
     
     return (
@@ -47,8 +48,12 @@ const mlTechnologies = [
   
 
 const projects = [
-    
-    
+    {
+        header: "",
+        text: "",
+        link: "",
+        img: "",
+    }
 ];
 
 export default MachineLearning;
