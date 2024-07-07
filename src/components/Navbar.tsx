@@ -29,7 +29,7 @@ function Navbar({ className }: { className?: string }) {
                     />
                 </Link>
 
-                <Menu style="" setActive={setActive}>
+                <Menu  setActive={setActive}>
                     <Link href="/">
                         <MenuItem
                             active={active}

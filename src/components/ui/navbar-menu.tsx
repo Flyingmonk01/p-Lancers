@@ -64,11 +64,9 @@ export const MenuItem = ({
 export const Menu = ({
     setActive,
     children,
-    style,
 }: {
     setActive: (item: string | null) => void;
     children: React.ReactNode;
-    style: string;
 }) => {
     return (
         <nav
