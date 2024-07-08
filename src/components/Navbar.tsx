@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
@@ -13,9 +13,29 @@ function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isOpenInner, setIsOpenInner] = useState<boolean>(false);
+
+    const menuRef = useRef<any>(null);
+
     const toggleDrawer = () => {
         setIsOpen(!isOpen);
     };
+
+    const handleClickOutside = (event: any) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            document.addEventListener("click", handleClickOutside, true);
+        } else {
+            document.removeEventListener("click", handleClickOutside, true);
+        }
+        return () => {
+            document.removeEventListener("click", handleClickOutside, true);
+        };
+    }, [isOpen]);
 
     return (
         <div
@@ -79,47 +99,22 @@ function Navbar({ className }: { className?: string }) {
                 </Menu>
 
                 <FiMenu
-                    className="fixed top-7 border text-2xl p-1 rounded-full right-7 z-50"
+                    className=" fixed top-7 border text-2xl p-1 rounded-full right-7 z-50 min-700:hidden "
                     onClick={toggleDrawer}
                 />
 
                 {isOpen && (
                     <div
+                        ref={menuRef}
                         onClick={toggleDrawer}
-                        className="bg-black border h-auto w-auto absolute top-20 right-0 rounded-lg z-99 px-2 py-4"
+                        className= "border border-gray-600 bg-black shadow h-auto w-auto absolute top-20 right-10 rounded-lg flex flex-col z-99 px-2 py-4 space-y-4 text-gray-300"
                     >
-                        <Link href={"/"}>Home</Link>
-
-                        <div>
-                            <MenuItem
-                                active={active}
-                                setActive={setActive}
-                                item="Our Services"
-                            >
-                                {isOpenInner && (
-                                    <div
-                                        className={
-                                            "flex flex-col text-sm text-white space-y-4"
-                                        }
-                                    >
-                                        <HoveredLink href="/web-dev">
-                                            Web Development
-                                        </HoveredLink>
-                                        <HoveredLink href="/data-analytics">
-                                            Data Analytics
-                                        </HoveredLink>
-                                        <HoveredLink href="/machine-learning">
-                                            Machine Learning
-                                        </HoveredLink>
-                                        <HoveredLink href="/mobile-development">
-                                            Android Development
-                                        </HoveredLink>
-                                    </div>
-                                )}
-                            </MenuItem>
-                        </div>
-
-                        <Link href={"/contact"}>Contact Us</Link>
+                        <Link href={'/'}>Home</Link>
+                        <Link href={'/web-dev'}>Web Development</Link>
+                        <Link href={'/mobile-development'}>Android / IOS Development</Link>
+                        <Link href={'/machine-learning'}>Machine Learning</Link>
+                        <Link href={'/data-analytics'}>Data Analysis</Link>
+                        <Link href={'/contact'}>Contact Us</Link>
                     </div>
                 )}
             </div>

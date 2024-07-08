@@ -17,6 +17,7 @@ const config: Config = {
     extend: {
       screens: {
         'max-700': { 'max': '700px' },
+        'min-700': { 'min': '700px' },
       },
       animation: {
         scroll:
