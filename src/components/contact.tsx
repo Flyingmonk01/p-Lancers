@@ -111,7 +111,7 @@ export function BackgroundBeamsDemo() {
                     />
                     <button
                         type="submit"
-                        className="bg-purple-900 transition-all w-auto delay-75 py-2 px-15 mt-12 rounded-lg hover:bg-purple-700 sm:px-4"
+                        className="px-12 mt-16 bg-purple-800 py-2 rounded-xl hover:bg-purple-500"
                     >
                         Submit
                     </button>

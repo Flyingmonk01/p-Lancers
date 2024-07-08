@@ -99,7 +99,7 @@ function Navbar({ className }: { className?: string }) {
                 </Menu>
 
                 <FiMenu
-                    className=" fixed top-7 border text-2xl p-1 rounded-full right-7 z-50 min-700:hidden "
+                    className=" absolute top-7 border text-2xl p-1 rounded-full right-7 z-50 min-700:hidden "
                     onClick={toggleDrawer}
                 />
 

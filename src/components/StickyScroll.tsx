@@ -75,9 +75,9 @@ const content = [
 ];
 export function StickyScrollRevealDemo() {
   return (
-    <div className="p-10 flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col">
       <h1 className="text-center font-semibold text-3xl mb-6 ">Our Founders</h1>
-      <StickyScroll content={content} />
+      <StickyScroll  content={content} />
     </div>
   );
 }
