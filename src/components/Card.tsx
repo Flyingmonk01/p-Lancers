@@ -36,12 +36,12 @@ export function ThreeDCardDemo({
                 >
                     {text}
                 </CardItem>
-                <CardItem translateZ="100" className="w-full mt-4">
+                <CardItem translateZ="100" className="w-full mt-4 flex justify-center items-center">
                     <Image
                         src={img}
                         height="1000"
                         width="1000"
-                        className="h-[10rem] w-[15rem] ml-[5rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                        className="h-[10rem] w-[15rem]  object-cover rounded-xl group-hover/card:shadow-xl sm"
                         alt="thumbnail"
                     />
                 </CardItem>
