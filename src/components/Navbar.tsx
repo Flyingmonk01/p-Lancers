@@ -88,39 +88,38 @@ function Navbar({ className }: { className?: string }) {
                         onClick={toggleDrawer}
                         className="bg-black border h-auto w-auto absolute top-20 right-0 rounded-lg z-99 px-2 py-4"
                     >
-                        <Link href={"/"} children="Home" />
+                        <Link href={"/"}>Home</Link>
 
-                        <div >
-                        <MenuItem
-                            active={active}
-                            setActive={setActive}
-                            item="Our Services"
-                        >
-                            {isOpenInner && (
-                                <div
-                                    className={
-                                        "flex flex-col text-sm text-white space-y-4"
-                                    }
-                                    
-                                >
-                                    <HoveredLink  href="/web-dev">
-                                        Web Development
-                                    </HoveredLink>
-                                    <HoveredLink href="/data-analytics">
-                                        Data Analytics
-                                    </HoveredLink>
-                                    <HoveredLink href="/machine-learning">
-                                        Machine Learning
-                                    </HoveredLink>
-                                    <HoveredLink href="/mobile-development">
-                                        Android Development
-                                    </HoveredLink>
-                                </div>
-                            )}
-                        </MenuItem>
+                        <div>
+                            <MenuItem
+                                active={active}
+                                setActive={setActive}
+                                item="Our Services"
+                            >
+                                {isOpenInner && (
+                                    <div
+                                        className={
+                                            "flex flex-col text-sm text-white space-y-4"
+                                        }
+                                    >
+                                        <HoveredLink href="/web-dev">
+                                            Web Development
+                                        </HoveredLink>
+                                        <HoveredLink href="/data-analytics">
+                                            Data Analytics
+                                        </HoveredLink>
+                                        <HoveredLink href="/machine-learning">
+                                            Machine Learning
+                                        </HoveredLink>
+                                        <HoveredLink href="/mobile-development">
+                                            Android Development
+                                        </HoveredLink>
+                                    </div>
+                                )}
+                            </MenuItem>
                         </div>
 
-                        <Link href={"/contact"} children="Contact Us" />
+                        <Link href={"/contact"}>Contact Us</Link>
                     </div>
                 )}
             </div>
