@@ -3,7 +3,7 @@ import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 import sam from "@/assets/images/sam.jpg"
-import pro from "@/assets/images/pro.jpg"
+import pro from "@/assets/images/pro.png"
 import kamlesh from "@/assets/images/kam.png"
 import nave from "@/assets/images/nave.jpg"
 
@@ -11,7 +11,7 @@ const content = [
   {
     title: "Pronita Barman",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "As an emerging freelance data analyst, I leverage Python with Numpy and Pandas for efficient data manipulation. I employ Matplotlib and Seaborn to create clear, informative visualizations. I am adept at using machine learning and deep learning techniques to build predictive models and uncover data patterns. My expertise in Natural Language Processing (NLP) enables me to extract valuable insights from text data. My strong background in maths and statistics ensures accurate understanding of data distributions, hypothesis testing, and model validation. I have worked on various projects, continuously adapting and learning new tools and techniques in this field.",
       content: (
         <div className="h-full w-full flex items-center  text-white md:justify-start sm:justify-start mt-4">
           <Image

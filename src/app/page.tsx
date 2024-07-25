@@ -6,6 +6,7 @@ import { HeroScrollDemo } from "@/components/HeroScrollDemo";
 import { Technologies } from "@/components/Technologies";
 import { GlobeDemo } from "@/components/Globe";
 import ScrollToTop from "@/components/ScrollToTop";
+import AiAssist from "@/components/AiAssist";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <>
            <ScrollToTop />
             <main className="min-h-screen w-[100vw] bg-black/[0.9] antialiased bg-grid-white/[0.02]">
+                
                 <div className="flex lg:flex-row flex-col justify-center items-center mt-20">
                     <HeroHighlightDemo />
                     <SparklesPreview />
@@ -29,6 +31,7 @@ export default function Home() {
 
                 <StickyScrollRevealDemo />
                 <InfiniteMovingCardsDemo />
+                <AiAssist />
             </main>
         </>
     );

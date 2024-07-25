@@ -23,7 +23,9 @@ function Footer() {
                 </Link>
                 <span>All copyrights are reserved to @flying_monk</span>
             </div>
-            <div className="h-36 w-full border rounded-xl"></div>
+            <div className="h-36 w-full border rounded-xl">
+                
+            </div>
 
             <div className="py-8">
                 <div className="flex p-2 justify-start items-center">

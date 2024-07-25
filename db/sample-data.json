@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "info": "P-LANCERS",
+        "description": "Our team of four highly skilled professionals is dedicated to delivering top-notch services in various cutting-edge domains, including data science, web development, Android/iOS development, machine learning, and natural language processing (NLP). With a strong emphasis on collaboration, innovation, and client satisfaction, we ensure that each project is handled with expertise and precision."
+    },
+    {
+        "id": 2,
+        "info": "Founders",
+        "description": "Check the founder section for more information related to our founders."
+    },
+    {
+        "id": 3,
+        "info": "Professions of founders",
+        "description": "Data Scientist, FullStack Developer, AI Engineer, FrontEnd Developer"
+    },
+    {
+        "id": 4,
+        "info": "LinkedIn",
+        "description": "@p-Lancers - Sharing the content related to our business, services and achievements. For more info visit our page."
+    },
+    {
+        "id": 5,
+        "info": "Instagram",
+        "description": "@p-Lancers where we posts reels on our services and achievements. For more info visit our page."
+    },
+    {
+        "id": 5,
+        "info": "Twitter",
+        "description": "@p-Lancers - Sharing the content related to our business, services and achievements. For more info visit our page."
+    },
+    {
+        "id": 6,
+        "info": "Services",
+        "description": "Discover Our Freelance Expertise - Welcome to our world of freelance excellence, where a team of dedicated professionals is ready to elevate your projects with their specialized skills in data science, web development, mobile app development, machine learning, and natural language processing (NLP). For more info check our services section."
+    }
+]
+
