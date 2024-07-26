@@ -14,7 +14,7 @@ function ScrollToTop() {
                 });
             }}
         >
-            <FaArrowUp className="fixed h-8 w-8 bottom-5 right-5 z-50 text-2xl px-1 bg-gray-300 text-black rounded-full hover:cursor-pointer hover:bg-gray-400 hover:px-2 animate-bounce delay-100" />
+            <FaArrowUp className="fixed h-8 w-8 bottom-5 right-5 z-50 p-1 bg-gray-300 text-black rounded-full hover:cursor-pointer hover:bg-gray-400 hover:delay-75 hover:px-2 animate-bounce" />
         </Link>
     );
 }
