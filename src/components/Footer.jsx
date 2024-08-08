@@ -20,7 +20,7 @@ function Footer() {
                         className="cursor-pointer rounded-2xl"
                     />
                 </Link>
-                <span>All copyrights are reserved to @flying_monk</span>
+                {/* <span>All copyrights are reserved to @flying_monk</span> */}
             </div>
 
             <FAQ />

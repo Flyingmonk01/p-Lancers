@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { BackgroundBeams } from "./ui/background-beams";
+import { FaLinkedin } from "react-icons/fa";
 
 export function BackgroundBeamsDemo() {
     const [messageData, setMessageData] = useState({
@@ -57,13 +58,13 @@ export function BackgroundBeamsDemo() {
             <div className="lg:w-1/2 m-24 flex justify-start items-start flex-col px-16 sm:px-0">
                 <h1 className="text-3xl py-6">Get in Touch with Us</h1>
                 <h1 className="text-lg font-thin ">
-                    Email: <span>s@google.com</span>
+                    Email: <span>sameerrai350@gmail.com</span>
                 </h1>
                 <h1 className="text-lg font-thin ">
-                    Contact: <span>73*******</span>
+                    Contact: <span>+91-7355442696</span>
                 </h1>
                 <h1 className="text-lg font-thin ">
-                    Address: <span>1/7 NYC, America</span>
+                    LinkedIN: <span><FaLinkedin to={'https://linkedin.com/raisameer'}/></span>
                 </h1>
             </div>
             <div className="max-w-2xl mx-auto p-4 ">

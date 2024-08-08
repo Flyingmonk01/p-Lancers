@@ -13,13 +13,13 @@ export default function AiAssist() {
   return (
     <main className="relative">
       <div className="relative my-10 px-4 w-full flex flex-col gap-5 items-center bottom-5">
-        <h1 className="text-4xl font-Kanit md:text-5xl font-bold text-white mt-10">
-          p-Lancers AI Portfolio
+        <h1 className="text-xl font-Kanit text-center font-bold text-white mt-10">
+          Our Personalized ChatBot
         </h1>
 
         <section className="w-full flex-1 flex flex-col overflow-y-scroll">
           {noMessages ? (
-            <p className="text-center text-xl">Ask me Anything</p>
+            <p className="text-center text-xl">Ask Anything About Us!</p>
           ) : (
             <>
               {messages.map((message, index) => {

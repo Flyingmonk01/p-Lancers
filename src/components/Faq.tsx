@@ -30,11 +30,11 @@ const FAQ = () => {
     };
 
     return (
-        <div className="max-w-2xl mx-auto p-4 w-1/2 shadow shadow-slate-300">
+        <div className="lg:max-w-2xl w-full mx-auto p-4 shadow shadow-slate-300 mt-4">
             {faqs.map((faq, index) => (
                 <div key={index} className="py-4">
                     <div
-                        className="cursor-pointer text-xl font-semibold flex gap-2 items-center flex-row"
+                        className="cursor-pointer text-md font-semibold flex gap-2 items-center flex-row lg:text-xl"
                         onClick={() => toggleFAQ(index)}
                     >
                         <FaAngleRight />

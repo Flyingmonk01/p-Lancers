@@ -10,7 +10,7 @@ function WebDevelopment() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="md:col-span-1 border-white p-4 my-6">
-                    <h1 className="text-center text-4xl font-extrabold my-12">FRONTEND TECH</h1>
+                    <h1 className="text-4xl font-extrabold my-12 text-left">FRONTEND TECH</h1>
                     {frontendTechnologies.map((i, idx)=>(
                         <li className="text-left ml-36  text-xl font-semibold my-6 md:ml-16 " key={idx}>{i}</li>
                     ))}
